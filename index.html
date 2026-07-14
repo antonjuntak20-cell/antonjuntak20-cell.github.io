@@ -1,0 +1,537 @@
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portofolio profesional Yohan Antoni — Spesialis Administrasi, Keuangan & HR dengan pengalaman 7+ tahun.">
+<title>Portofolio Profesional | Yohan Antoni</title>
+
+<!-- Performance / font preconnect -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+
+<style>
+    :root{
+        --bg: #fdfbf7;
+        --text: #2d3436;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        scroll-behavior: smooth;
+    }
+
+    .chart-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        max-height: 400px;
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: #636e72;
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #cbd5e0;
+        border-radius: 10px;
+    }
+
+    /* focus styles for keyboard users */
+    .focus-ring:focus-visible {
+        outline: 3px solid rgba(99,110,114,0.18);
+        outline-offset: 3px;
+    }
+
+    /* small helper for hidden skip link */
+    .skip-link {
+        position: absolute;
+        left: -999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    .skip-link:focus {
+        left: 1rem;
+        top: 1rem;
+        width: auto;
+        height: auto;
+        background: white;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        z-index: 9999;
+    }
+</style>
+</head>
+<body class="custom-scrollbar">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 border-b border-gray-100 px-6 py-4" role="navigation" aria-label="Main navigation">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tight text-slate-800">YOHAN<span class="text-slate-400">ANTONI</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600" role="menubar">
+                <a role="menuitem" href="#beranda" class="nav-link">Beranda</a>
+                <a role="menuitem" href="#keahlian" class="nav-link">Keahlian</a>
+                <a role="menuitem" href="#pengalaman" class="nav-link">Pengalaman</a>
+                <a role="menuitem" href="#sertifikasi" class="nav-link">Sertifikasi</a>
+            </div>
+            <a href="mailto:antonjuntak20@gmail.com" class="bg-slate-800 text-white px-5 py-2 rounded-full text-xs hover:bg-slate-700 transition">Kontak Saya</a>
+        </div>
+    </nav>
+
+    <main id="main" class="pt-32">
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pb-20 px-6" aria-labelledby="hero-heading">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-full mb-4">7+ TAHUN PENGALAMAN</span>
+                <h1 id="hero-heading" class="text-5xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">Spesialis Administrasi, Keuangan & HR</h1>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                    Profesional yang berdedikasi dengan latar belakang Ekonomi & Bisnis. Ahli dalam pengelolaan anggaran, administrasi proyek, hingga operasional SDM dengan ketelitian tinggi dan orientasi pada efisiensi.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex items-center space-x-2 text-sm text-slate-500">
+                        <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center" aria-hidden="true">📍</span>
+                        <span> Bogor, Jawa Barat</span>
+                    </div>
+                    <div class="flex items-center space-x-2 text-sm text-slate-500">
+                        <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center" aria-hidden="true">🎓</span>
+                        <span> IPK 3.44 / 4.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h3 class="text-center font-semibold text-slate-700 mb-6 italic">Visualisasi Distribusi Kompetensi</h3>
+                <div class="chart-container" role="img" aria-label="Grafik batang persentase penguasaan keahlian">
+                    <canvas id="skillChart" aria-hidden="false"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="keahlian" class="py-20 bg-slate-50 px-6" aria-labelledby="dashboard-heading">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12 text-center md:text-left">
+                <h2 id="dashboard-heading" class="text-3xl font-bold text-slate-900 mb-4">Dashboard Kompetensi</h2>
+                <p class="text-slate-600 max-w-2xl">Bagian ini merangkum pilar utama keahlian saya. Anda dapat berinteraksi dengan tab di bawah untuk melihat detail spesifik dari setiap fungsi pekerjaan yang saya kuasai.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <!-- Use <button> for accessibility & keyboard focus -->
+                <button type="button" class="glass-card p-6 rounded-2xl cursor-pointer border-b-4 border-blue-400 focus-ring" data-skill="finance" aria-controls="skillDetailBox" aria-expanded="false">
+                    <div class="text-3xl mb-4" aria-hidden="true">💰</div>
+                    <h3 class="font-bold text-slate-800 mb-2">Finance & Accounting</h3>
+                    <p class="text-xs text-slate-500">Pengelolaan RAK, Laporan Arus Kas, & Perpajakan.</p>
+                </button>
+                <button type="button" class="glass-card p-6 rounded-2xl cursor-pointer border-b-4 border-emerald-400 focus-ring" data-skill="admin" aria-controls="skillDetailBox" aria-expanded="false">
+                    <div class="text-3xl mb-4" aria-hidden="true">📁</div>
+                    <h3 class="font-bold text-slate-800 mb-2">Project Administration</h3>
+                    <p class="text-xs text-slate-500">Data Entry, Arsip Digital, & Manajemen Dokumen.</p>
+                </button>
+                <button type="button" class="glass-card p-6 rounded-2xl cursor-pointer border-b-4 border-amber-400 focus-ring" data-skill="hr" aria-controls="skillDetailBox" aria-expanded="false">
+                    <div class="text-3xl mb-4" aria-hidden="true">👥</div>
+                    <h3 class="font-bold text-slate-800 mb-2">HR Operations</h3>
+                    <p class="text-xs text-slate-500">Payroll, PKWT/PKWTT, & Hubungan Industrial.</p>
+                </button>
+            </div>
+
+            <div id="skillDetailBox" class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm" aria-live="polite">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                    <h4 id="skillTitle" class="text-2xl font-bold text-slate-800">Pilih kategori keahlian di atas</h4>
+                    <span id="skillBadge" class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded mt-2 md:mt-0 uppercase">DETAIL KOMPETENSI</span>
+                </div>
+                <div id="skillList" class="grid md:grid-cols-2 gap-4 text-slate-600">
+                    <p class="italic text-slate-400">Klik salah satu kartu di atas untuk melihat detail keahlian teknis dan pengalaman terkait.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="pengalaman" class="py-20 px-6" aria-labelledby="experience-heading">
+        <div class="max-w-6xl mx-auto">
+            <h2 id="experience-heading" class="text-3xl font-bold text-slate-900 mb-12 text-center">Rekam Jejak Profesional</h2>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 before:to-transparent">
+                
+                <!-- Experience Item 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-800 text-white shadow shrink-0 md:order-1">
+                        💼
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
+                        <div class="flex items-center justify-between mb-1">
+                            <time class="text-xs font-bold text-slate-400 uppercase">Mei 2022 - Juni 2026</time>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Staf Administrasi & Akuntansi</h4>
+                        <p class="text-sm text-blue-600 mb-4">PT Suwanda Karya Mandiri</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Menyusun dan memantau Rencana Anggaran Keuangan (RAK) proyek secara berkala untuk efisiensi dana.</li>
+                            <li>Menyusun laporan harian dan bulanan proyek sebagai bahan evaluasi progres dan kebutuhan audit.</li>
+                            <li>Menyiapkan seluruh data administratif serta data pendukung operasional kantor.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-800 text-white shadow shrink-0 md:order-1">
+                        💼
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
+                        <div class="flex items-center justify-between mb-1">
+                            <time class="text-xs font-bold text-slate-400 uppercase">Mar 2024 - Agu 2024</time>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Asisten Koordinator Lapangan</h4>
+                        <p class="text-sm text-blue-600 mb-4">PT. Blantickindo Aneka</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Menginput data kuesioner warga secara presisi untuk kebutuhan analisis sosial wilayah.</li>
+                            <li>Mengembangkan sistem pengarsipan dokumen digital & fisik yang aman guna mempermudah aksesibilitas saat audit.</li>
+                            <li>Mendampingi Koordinator Lapangan dalam eksekusi operasional taktis di lapangan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-800 text-white shadow shrink-0 md:order-1">
+                        💼
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
+                        <div class="flex items-center justify-between mb-1">
+                            <time class="text-xs font-bold text-slate-400 uppercase">Feb 2021 - Jan 2022</time>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Tenaga Administrasi</h4>
+                        <p class="text-sm text-blue-600 mb-4">Dongbu Engineering Co. Ltd</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Input data proyek real-time ke dalam sistem secara akurat dan tepat waktu.</li>
+                            <li>Mengelola dokumen penting proyek, pengarsipan, serta koordinasi internal untuk mendukung operasional.</li>
+                            <li>Menjamin kelengkapan dan validitas informasi untuk kepentingan pelaporan kepada manajemen tingkat atas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-800 text-white shadow shrink-0 md:order-1">
+                        💼
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
+                        <div class="flex items-center justify-between mb-1">
+                            <time class="text-xs font-bold text-slate-400 uppercase">Apr 2020 - Des 2020</time>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Asisten Administrasi</h4>
+                        <p class="text-sm text-blue-600 mb-4">PT. Hasfarm Dian Konsultan</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Membantu pencatatan transaksi masuk dan keluar serta penyusunan laporan keuangan operasional.</li>
+                            <li>Monitoring rutin penggunaan petty cash proyek agar tetap selaras dengan kebijakan anggaran perusahaan.</li>
+                            <li>Menyiapkan dokumen kelengkapan administrasi lapangan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 5 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-800 text-white shadow shrink-0 md:order-1">
+                        💼
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
+                        <div class="flex items-center justify-between mb-1">
+                            <time class="text-xs font-bold text-slate-400 uppercase">Jun 2019 - Jan 2020</time>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Administrasi Akuntansi</h4>
+                        <p class="text-sm text-blue-600 mb-4">Dias Design Consultant</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Menyusun laporan berkala mengenai perkembangan proyek, target pencapaian, dan kendala operasional lapangan.</li>
+                            <li>Mengonsep surat resmi organisasi dan menyusun notulensi rapat koordinasi secara presisi.</li>
+                            <li>Melakukan pengarsipan terstruktur untuk bukti pembayaran, faktur, dan nota pengeluaran.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 6 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-800 text-white shadow shrink-0 md:order-1">
+                        🎓
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
+                        <div class="flex items-center justify-between mb-1">
+                            <time class="text-xs font-bold text-slate-400 uppercase">Des 2018 - Feb 2019</time>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Asisten Dosen</h4>
+                        <p class="text-sm text-blue-600 mb-4">Universitas Kristen Indonesia</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Menginput nilai mahasiswa ke dalam sistem akademik universitas secara teliti.</li>
+                            <li>Membantu proses koreksi tugas mingguan serta mendukung urusan administratif perkuliahan dosen terkait.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 7 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-800 text-white shadow shrink-0 md:order-1">
+                        ☕
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
+                        <div class="flex items-center justify-between mb-1">
+                            <time class="text-xs font-bold text-slate-400 uppercase">Juni 2018 - Juli 2018</time>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Barista</h4>
+                        <p class="text-sm text-blue-600 mb-4">Kopi Kenangan</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc pl-4">
+                            <li>Melayani pelanggan secara ramah, menangani pesanan transaksi kasir harian dengan cepat.</li>
+                            <li>Menyajikan produk minuman kopi sesuai dengan standar kepatuhan resep dan kebersihan ketat perusahaan.</li>
+                            <li>Menjaga sanitasi area kerja dan perawatan preventif mesin espresso demi kelayakan operasional.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="sertifikasi" class="py-20 bg-slate-900 text-white px-6" aria-labelledby="cert-heading">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 id="cert-heading" class="text-3xl font-bold mb-4">Sertifikasi & Kredensial</h2>
+                <p class="text-slate-400">Bukti komitmen saya dalam pengembangan diri profesional yang berkelanjutan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl border border-slate-800 bg-slate-800/50 hover:bg-slate-800 transition">
+                    <div class="text-xs font-bold text-amber-400 mb-2">BNSP</div>
+                    <h4 class="font-semibold mb-4 text-sm">Tenaga Administrasi Keuangan</h4>
+                    <span class="text-xs text-slate-500">LSP Manajemen Kewirausahaan Prima Indonesia</span>
+                </div>
+                <div class="p-6 rounded-2xl border border-slate-800 bg-slate-800/50 hover:bg-slate-800 transition">
+                    <div class="text-xs font-bold text-blue-400 mb-2">TAXATION</div>
+                    <h4 class="font-semibold mb-4 text-sm">Brevet Pajak A & B</h4>
+                    <span class="text-xs text-slate-500">Piranha Smart Center</span>
+                </div>
+                <div class="p-6 rounded-2xl border border-slate-800 bg-slate-800/50 hover:bg-slate-800 transition">
+                    <div class="text-xs font-bold text-emerald-400 mb-2">HR STAFF</div>
+                    <h4 class="font-semibold mb-4 text-sm">Sertifikasi HR Staff</h4>
+                    <span class="text-xs text-slate-500">Quantum HR Indonesia</span>
+                </div>
+                <div class="p-6 rounded-2xl border border-slate-800 bg-slate-800/50 hover:bg-slate-800 transition">
+                    <div class="text-xs font-bold text-purple-400 mb-2">ENGLISH</div>
+                    <h4 class="font-semibold mb-4 text-sm">TOEFL Proficiency</h4>
+                    <span class="text-xs text-slate-500">Golden English Course</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-slate-100 px-6" role="contentinfo">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <h4 class="font-bold text-slate-800">Yohan Antoni</h4>
+                <p class="text-sm text-slate-500">Spesialis Admin, Finance & HR</p>
+            </div>
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="mailto:antonjuntak20@gmail.com" class="text-slate-600 hover:text-slate-900">Email</a>
+                <a href="https://wa.me/6282123917507" class="text-slate-600 hover:text-slate-900">WhatsApp</a>
+                <a href="https://www.linkedin.com/in/yohan-antoni-smjk/" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-slate-900">LinkedIn</a>
+            </div>
+            <p class="text-xs text-slate-400">© 2026 Yohan Antoni. Gunung Putri, Bogor.</p>
+        </div>
+    </footer>
+
+<script>
+/* Wrap interactive initialization in DOMContentLoaded so Chart.js (deferred) is ready */
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Data kompetensi
+    const skillsData = {
+        finance: {
+            title: "Finance & Accounting Expertise",
+            badge: "Certified BNSP",
+            items: [
+                "✓ Penyusunan Rencana Anggaran Keuangan (RAK) Proyek",
+                "✓ Pembuatan Laporan Arus Kas & Rekonsiliasi Bank",
+                "✓ Basic Accurate Accounting Software",
+                "✓ Pelaporan Pajak A & B (PPh & PPN)",
+                "✓ Monitoring Petty Cash & Pengawasan Anggaran",
+                "✓ Persiapan Data Audit Keuangan"
+            ]
+        },
+        admin: {
+            title: "Project Administration Excellence",
+            badge: "7+ Years Exp",
+            items: [
+                "✓ Manajemen Arsip Digital & Fisik Sistematis",
+                "✓ Data Entry Akurasi Standar (Excel Intermediate)",
+                "✓ Penyusunan SOP Operasional & Notulensi Rapat",
+                "✓ Koordinasi Lintas Divisi & Komunikasi Vendor",
+                "✓ Pembuatan Surat Resmi & Proposal Dana",
+                "✓ Riset Sosial & Survei Lapangan"
+            ]
+        },
+        hr: {
+            title: "Human Resources Operations",
+            badge: "HR Certified",
+            items: [
+                "✓ Pengelolaan Payroll Karyawan",
+                "✓ Administrasi Kontrak (PKWT / PKWTT)",
+                "✓ Penyusunan SOP HR",
+                "✓ Manajemen Waktu & Disiplin",
+                "✓ Penyusunan Jadwal Pelatihan",
+                "✓ Hubungan Industrial Dasar"
+            ]
+        }
+    };
+
+    // Element references
+    const titleElem = document.getElementById('skillTitle');
+    const badgeElem = document.getElementById('skillBadge');
+    const listElem = document.getElementById('skillList');
+    const skillButtons = document.querySelectorAll('[data-skill]');
+
+    function updateSkillDetail(category, triggeringButton) {
+        const data = skillsData[category];
+        titleElem.textContent = data.title;
+        badgeElem.textContent = data.badge;
+
+        listElem.innerHTML = '';
+        data.items.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'p-3 bg-slate-50 rounded-lg text-sm border border-slate-100 font-medium';
+            div.textContent = item;
+            listElem.appendChild(div);
+        });
+
+        // accessibility: update aria-expanded on buttons
+        skillButtons.forEach(btn => {
+            const isActive = btn === triggeringButton;
+            btn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        });
+
+        // Re-trigger animation if needed
+        const box = document.getElementById('skillDetailBox');
+        box.style.animation = 'none';
+        void box.offsetHeight; /* trigger reflow */
+        box.style.animation = null;
+    }
+
+    // Attach events to skill buttons (click + keyboard handled automatically for <button>)
+    skillButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const cat = this.getAttribute('data-skill');
+            updateSkillDetail(cat, this);
+        });
+    });
+
+    // Initialize Chart.js safely if available
+    const canvas = document.getElementById('skillChart');
+    if (canvas && window.Chart) {
+        const ctx = canvas.getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Finance', 'Admin', 'HR', 'IT Tools', 'Comms'],
+                datasets: [{
+                    label: 'Penguasaan (%)',
+                    data: [80, 90, 80, 70, 80],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 99, 132, 0.7)'
+                    ],
+                    borderRadius: 10,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            callback: function(value) { return value + "%" }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    // Smooth scroll adjustment for fixed nav (touches keyboard users better)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            const target = document.querySelector(href);
+            if (!target) return;
+            e.preventDefault();
+            const offset = 80;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+            // update focus for accessibility
+            target.setAttribute('tabindex', '-1');
+            target.focus({ preventScroll: true });
+        });
+    });
+});
+</script>
+</body>
+</html>
