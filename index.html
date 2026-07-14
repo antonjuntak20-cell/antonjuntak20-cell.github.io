@@ -108,6 +108,43 @@
         box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         z-index: 9999;
     }
+
+    /* Profile Image Styles */
+    .profile-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        border: 3px solid rgba(255, 255, 255, 0.9);
+        object-fit: cover;
+        animation: slideInRight 0.6s ease-out;
+    }
+
+    @keyframes slideInRight {
+        from {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .profile-container {
+        position: relative;
+        animation: slideInRight 0.6s ease-out;
+    }
+
+    .profile-container::before {
+        content: '';
+        position: absolute;
+        inset: -8px;
+        background: linear-gradient(135deg, rgba(99, 110, 114, 0.1), rgba(54, 162, 235, 0.1));
+        border-radius: 28px;
+        z-index: -1;
+    }
 </style>
 </head>
 <body class="custom-scrollbar">
@@ -150,11 +187,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-                <h3 class="text-center font-semibold text-slate-700 mb-6 italic">Visualisasi Distribusi Kompetensi</h3>
-                <div class="chart-container" role="img" aria-label="Grafik batang persentase penguasaan keahlian">
-                    <canvas id="skillChart" aria-hidden="false"></canvas>
-                </div>
+            <div class="profile-container">
+                <img src="profile.jpg" alt="Yohan Antoni - Professional Portrait" class="profile-image" loading="lazy">
             </div>
         </div>
     </section>
