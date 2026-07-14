@@ -114,6 +114,7 @@
         width: 100%;
         max-width: 400px;
         height: auto;
+        aspect-ratio: 3/4;
         border-radius: 20px;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         border: 3px solid rgba(255, 255, 255, 0.9);
@@ -188,7 +189,13 @@
                 </div>
             </div>
             <div class="profile-container">
-                <img src="profile.jpg" alt="Yohan Antoni - Professional Portrait" class="profile-image" loading="lazy">
+                <div class="w-full max-w-400px h-96 bg-gradient-to-br from-slate-200 to-slate-300 rounded-20px flex items-center justify-center border-3 border-white shadow-lg">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">👤</div>
+                        <p class="text-slate-600 text-sm">Foto Profil</p>
+                        <p class="text-slate-500 text-xs mt-2">Ukuran: 400x500px</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
